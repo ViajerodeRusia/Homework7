@@ -19,7 +19,7 @@ public class Main {
         library.addNew(new Book("Harry Potter and the Philosopher's Stone", 1997, new Author("Joanne Rowling")));
         library.addNew(new Book("And Then There Were None", 1939, new Author("Agatha Christie")));
         library.addNew(new Book("Dream of the Red Chamber", 1791, new Author("Cao Xueqin")));
-        library.addNew(new Book("The Hobbit", 1936, new Author("John Tolkien")));
+        library.addNew(new Book("The Hobbit", 1935, new Author("John Tolkien")));
 
         getList(library.getBooks());
 
