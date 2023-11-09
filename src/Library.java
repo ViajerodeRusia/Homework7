@@ -29,8 +29,10 @@ public class Library {
     }
     public boolean checkBook(Book book){
         for (int i = 0; i < books.length; i++) {
-            if (books[i]!= null && books[i].equals(book)) {
-                return false;
+            if (books[i]!= null) {
+                if (books[i].equals(book) || books[i].getAuthor().getName().equals(book.getAuthor().getName())) {
+                    return false;
+                }
             }
         }
         return true;

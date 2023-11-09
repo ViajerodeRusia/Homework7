@@ -22,6 +22,7 @@ public class Book {
 
         return publishingYear;
     }
+
     public void setPublishingYear(int publishingYear) {
 
         this.publishingYear = publishingYear;
@@ -36,11 +37,11 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return publishingYear == book.publishingYear && Objects.equals(bookName, book.bookName) && Objects.equals(author, book.author);
+        return publishingYear == book.publishingYear && Objects.equals(bookName, book.bookName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookName, publishingYear, author);
+        return Objects.hash(bookName, publishingYear);
     }
 }
