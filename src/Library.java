@@ -22,10 +22,10 @@ public class Library {
                 return; // return выходит из метода, а break выйдет из цикла for;
             } else if (!checkBook(book)) {
                 System.out.println("checkBook(book) = " + checkBook(book));
-                throw new RuntimeException("Книга с таким названием уже есть");
+                throw new RuntimeException(" Книга с таким названием уже есть ");
             }
         }
-        throw new RuntimeException("Все места заняты");
+        throw new RuntimeException(" Все места заняты ");
     }
     public boolean checkBook(Book book){
         for (int i = 0; i < books.length; i++) {
